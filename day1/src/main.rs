@@ -2,15 +2,13 @@ use day1::LocationIds;
 
 const INPUT: &str = include_str!("input.txt");
 
-
-
 fn main() {
     let location_ids: LocationIds<u64> = INPUT.parse().expect("Input must parse");
     let differences = location_ids.get_differences();
-    println!("Part1: {}", differences.into_iter().sum::<u64>());
+    println!("Day 1 Part 1: {}", differences.into_iter().sum::<u64>());
 
     let similarities = location_ids.get_similarities();
-    println!("Part2: {}", similarities.into_iter().sum::<u64>());
+    println!("Day 1 Part 2: {}", similarities.into_iter().sum::<u64>());
 }
 
 #[cfg(test)]
