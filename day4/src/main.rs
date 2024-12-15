@@ -51,6 +51,6 @@ mod main_tests {
     }
     #[test]
     fn test_solve_part_2() {
-        assert_eq!(solve_part2(INPUT), 0usize)
+        assert_eq!(solve_part2(INPUT), 9usize)
     }
 }
